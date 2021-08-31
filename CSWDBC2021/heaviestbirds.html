@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds Table</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        body {
+            background-color: tan;
+        }
+    </style>
+    <h1>Heaviest Birds</h1>
+    <table border="1" cellpadding="10px" align="center">
+        <thead bgcolor="gray">
+            <tr>
+                <th>Animal</th>
+                <th>Average mass <br>[kg (lb)]</th>
+                <th>Maximum mass <br>[kg (lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+        <tbody align="center" bgcolor="lightblue">
+            <tr>
+                <td>Ostrich</td>
+                <td>104 (230)</td>
+                <td>156.8 (346)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90 (200)</td>
+                <td>130 (287)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5 (29.8)</td>
+                <td>39 (86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Version 2 with RowSpan and ColSpan</h2>
+    <table border="1" cellpadding="10px" align="center">
+        <thead bgcolor="gray">
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average mass</th>
+                <th colspan="2">Maximum mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>kg</th>
+                <th>lb</th>
+                <th>kg</th>
+                <th>lb</th>
+            </tr>
+        </thead>
+        <tbody align="center" bgcolor="lightblue">
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>156.8</td>
+                <td>346</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>130</td>
+                <td>287</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>39</td>
+                <td>86</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
