@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio, Checkbox, and Select</title>
+</head>
+<body>
+<style>
+	div {
+		display: block;
+	}
+</style>
+<form action="/subscription">
+<div class="radio">
+	
+
+	<p>Select a Service:</p>
+	<div class="subscription-radio">
+		<input type="radio" name="subtype" id="sub1" value="free">
+		<label for="sub1">Free Service: </label>
+	</div>
+	<div class="subscription-radio">
+		<input type="radio" name="subtype" id="sub2" value="premium">
+		<label for="sub2">Premium Service: </label>
+	</div>
+	<div class="subscription-radio">
+		<input type="radio" name="subtype" id="sub3" value="unlimited">
+		<label for="sub3">Unlimited Service: </label>
+	</div>
+
+
+</div>
+<br>
+<hr>
+<div class="selection">
+	<p>Select your shirt size:</p>
+	<select name="shirtsize">
+		<option disabled selected>Select from the options below:</option>
+		<option value="xs">XS</option>
+		<option value="s">S</option>
+		<option value="m">M</option>
+		<option value="l">L</option>
+		<option value="xl">XL</option>
+		<option value="xxl">XXL</option>
+	</select>
+</div>
+<br>
+<hr>
+<div class="ToS_checkbox">
+	<input type="checkbox" name="tos" id="tos" value="true" required>
+	<label for="tos">I agree with ToS, etc.</label>
+</div>
+<br>
+<br>
+	<button>Submit</button>
+	</form>
+</body>
+</html>
