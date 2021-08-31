@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range and Textareas</title>
+</head>
+
+<body>
+    <style>
+        .range {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+    <form action="/q">
+        <div class="range">
+            <input type="range" min="1" max="10" value="7" id="cheese" name="cheezyness">
+            <label for="cheese">Amount of Cheese</label>
+        </div>
+        <div class="range">
+            <p>
+                <label for="age">Please Enter your age:</label>
+            </p>
+            <input type="number" min="1" max="1001" step="2" name="num" id="age">
+        </div>
+        <div class="range">
+            <p>
+                <label for="bio">Please tell us about yourself:</label>
+            </p>
+            <textarea name="bio" id="bio" cols="30" rows="6">Hi. I'm Bob.
+            </textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
