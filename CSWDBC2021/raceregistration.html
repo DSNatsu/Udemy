@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Now!</title>
+</head>
+<body>
+<h1>Race Registration!</h1>
+<form action="/q">
+	<div>
+		<label for="firstname">First Name:</label>
+		<input type="text" name="first" id="firstname" required>
+		<label for="lastname">Last Name:</label>
+		<input type="text" name="last" id="lastname" required>
+	</div>
+	<div>
+		<p>Select a Race:</p>
+		<input type="radio" name="racetype" id="funrun" value="fr5k">
+		<label for="funrun">Fun Run 5k</label>
+		<br>
+		<input type="radio" name="racetype" id="halfmarathon" value="halfmar">
+		<label for="halfmarathon">Half Marathon</label>
+		<br>
+		<input type="radio" name="racetype" id="fullmarathon" value="fullmar">
+		<label for="fullmarathon">Full Marathon</label>
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="password">Password</label>
+		<input type="password" name="p" id="password">
+	<br>
+	<label for="age">Select Age Group:</label>
+	<select id="age" name="agegroup">
+		<option value="u18" selected>Under 18</option>	
+		<option value="18-25">18-25</option>	
+		<option value="26-65">26-65</option>	
+		<option value="65+">65+</option>	
+	</select>
+	</div>
+
+	<button>Register!</button>
+</form>
+
+<!--example form submission: file:///C:/q?first=Ajan&last=Bhakta&racetype=fr5k&email=abc%40123.com&p=123456&agegroup=26-65 -->
+
+</body>
+</html>
